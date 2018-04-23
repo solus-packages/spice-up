@@ -2,8 +2,8 @@
     <Source>
         <Name>spice-up</Name>
         <Packager>
-            <Name>Stig Svensson</Name>
-            <Email>stigarn@protonmail.ch</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-3.0-only</License>
         <PartOf>office</PartOf>
@@ -71,12 +71,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2018-03-13</Date>
+        <Update release="2">
+            <Date>2018-04-23</Date>
             <Version>1.3.2</Version>
             <Comment>Packaging update</Comment>
-            <Name>Stig Svensson</Name>
-            <Email>stigarn@protonmail.ch</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>
