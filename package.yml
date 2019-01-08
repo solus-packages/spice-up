@@ -1,8 +1,8 @@
 name       : spice-up
-version    : 1.3.2
-release    : 3
+version    : 1.7.0
+release    : 4
 source     :
-    - https://github.com/Philip-Scott/Spice-up/archive/1.3.2.tar.gz : 0557bdf871d20c7e9340a628ffc0c31ed14463e4787b662bb44ccd6d02c38ead
+    - https://github.com/Philip-Scott/Spice-up/archive/1.7.0.tar.gz : fbb01b5f7ce9e21a8789b14fa2932bf6428fd9b504a1e18252b102c89d42f299
 license    : GPL-3.0-only
 component  : office
 summary    : Create simple and beautiful presentations on the Linux desktop
@@ -14,8 +14,10 @@ builddeps  :
     - pkgconfig(gudev-1.0)
     - pkgconfig(json-glib-1.0)
     - pkgconfig(libevdev)
+    - pkgconfig(libsoup-2.4)
     - vala
 setup      : |
+    sed -i "6d" src/CMakeLists.txt # disable tests
     %cmake -DCMAKE_INSTALL_PREFIX=/usr/
 build      : |
     %make
