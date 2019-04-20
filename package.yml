@@ -1,8 +1,8 @@
 name       : spice-up
-version    : 1.7.0
-release    : 4
+version    : 1.8.0
+release    : 5
 source     :
-    - https://github.com/Philip-Scott/Spice-up/archive/1.7.0.tar.gz : fbb01b5f7ce9e21a8789b14fa2932bf6428fd9b504a1e18252b102c89d42f299
+    - https://github.com/Philip-Scott/Spice-up/archive/1.8.0.tar.gz : e55e1a10e54bf8029b19c22f8265df7fd974baacaf58f67e94e88a0b34c9586e
 license    : GPL-3.0-only
 component  : office
 summary    : Create simple and beautiful presentations on the Linux desktop
@@ -20,6 +20,6 @@ setup      : |
     sed -i "6d" src/CMakeLists.txt # disable tests
     %cmake -DCMAKE_INSTALL_PREFIX=/usr/
 build      : |
-    %make
+    %make -j1
 install    : |
     %make_install
